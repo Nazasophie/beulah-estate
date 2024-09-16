@@ -340,6 +340,10 @@ button, a { transition: var(--transition); }
   --orange-soda: #3880ff; 
 }
 
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
 
 .header-bottom {
   background: var(--white);
