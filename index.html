@@ -25,6 +25,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- 
+    - AOS CSS link 
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 
 <body>
@@ -194,33 +199,41 @@
 
       <section class="hero" id="home">
         <div class="container">
-
-          <div class="hero-content">
-
-            <p class="hero-subtitle">
+    
+          <div class="hero-content" data-aos="fade-up">
+            <p class="hero-subtitle" data-aos="fade-right" data-aos-delay="200">
               <ion-icon name="home"></ion-icon>
-
               <span>Real Estate Agency</span>
             </p>
-
-            <h2 class="h1 hero-title">Find Your Dream House By Us</h2>
-
-            <p class="hero-text">
+    
+            <h2 class="h1 hero-title" data-aos="fade-up" data-aos-delay="400">Find Your Dream House By Us</h2>
+    
+            <p class="hero-text" data-aos="fade-up" data-aos-delay="600">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
             </p>
-
-            <button class="btn">Make An Enquiry</button>
-
+    
+            <button class="btn" data-aos="zoom-in" data-aos-delay="800">Make An Enquiry</button>
+    
           </div>
-
-          <figure class="hero-banner">
+    
+          <figure class="hero-banner" data-aos="fade-left" data-aos-delay="1000">
             <img src="./assets/images/hero-banner.png" alt="Modern house model" class="w-100">
           </figure>
-
+    
         </div>
       </section>
-
-
+    
+      <!-- AOS JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+      <!-- Initialize AOS -->
+      <script>
+        AOS.init({
+          duration: 1200, // Duration of the animation in milliseconds
+          offset: 100,    // Trigger the animation earlier
+          once: true      // Animation occurs only once
+        });
+      </script>
 
 
 
@@ -230,77 +243,64 @@
 
       <section class="about" id="about">
         <div class="container">
-
-          <figure class="about-banner">
+      
+          <figure class="about-banner" data-aos="fade-right">
             <img src="./assets/images/about-banner-1.png" alt="House interior">
-
-            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img">
+            <img src="./assets/images/about-banner-2.jpg" alt="House interior" class="abs-img" data-aos="fade-left" data-aos-delay="300">
           </figure>
-
-          <div class="about-content">
-
-            <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">The Leading Real Estate Rental Marketplace.</h2>
-
-            <p class="about-text">
-              Over 39,000 people work for us in more than 70 countries all over the This breadth of global coverage,
-              combined with
-              specialist services
+      
+          <div class="about-content" data-aos="fade-up">
+            <p class="section-subtitle" data-aos="zoom-in" data-aos-delay="400">About Us</p>
+      
+            <h2 class="h2 section-title" data-aos="fade-up" data-aos-delay="500">The Leading Real Estate Rental Marketplace.</h2>
+      
+            <p class="about-text" data-aos="fade-up" data-aos-delay="600">
+              Over 39,000 people work for us in more than 70 countries all over the world. This breadth of global coverage, combined with specialist services.
             </p>
-
-            <ul class="about-list">
-
-              <li class="about-item">
+      
+            <ul class="about-list" data-aos="fade-up" data-aos-delay="700">
+      
+              <li class="about-item" data-aos="flip-left" data-aos-delay="800">
                 <div class="about-item-icon">
                   <ion-icon name="home-outline"></ion-icon>
                 </div>
-
                 <p class="about-item-text">Smart Home Design</p>
               </li>
-
-              <li class="about-item">
+      
+              <li class="about-item" data-aos="flip-left" data-aos-delay="900">
                 <div class="about-item-icon">
                   <ion-icon name="leaf-outline"></ion-icon>
                 </div>
-
                 <p class="about-item-text">Beautiful Scene Around</p>
               </li>
-
-              <li class="about-item">
+      
+              <li class="about-item" data-aos="flip-left" data-aos-delay="1000">
                 <div class="about-item-icon">
                   <ion-icon name="wine-outline"></ion-icon>
                 </div>
-
                 <p class="about-item-text">Exceptional Lifestyle</p>
               </li>
-
-              <li class="about-item">
+      
+              <li class="about-item" data-aos="flip-left" data-aos-delay="1100">
                 <div class="about-item-icon">
                   <ion-icon name="shield-checkmark-outline"></ion-icon>
                 </div>
-
                 <p class="about-item-text">Complete 24/7 Security</p>
               </li>
-
+      
             </ul>
-
-            <p class="callout">
-              "Enimad minim veniam quis nostrud exercitation
-              llamco laboris. Lorem ipsum dolor sit amet"
+      
+            <p class="callout" data-aos="fade-in" data-aos-delay="1200">
+              "Enimad minim veniam quis nostrud exercitation llamco laboris. Lorem ipsum dolor sit amet"
             </p>
-
-            <a href="#service" class="btn">Our Services</a>
-
+      
+            <a href="#service" class="btn" data-aos="zoom-in" data-aos-delay="1300">Our Services</a>
+      
           </div>
-
+      
         </div>
       </section>
-
-
-
-
-
+      
       <!-- 
         - #SERVICE
       -->

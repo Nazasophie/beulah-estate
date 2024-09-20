@@ -462,7 +462,10 @@ button, a { transition: var(--transition); }
   padding-block: var(--section-padding);
 }
 
-.hero-content { margin-bottom: 60px; }
+.hero-content {
+  margin-bottom: 60px;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
 
 .hero-subtitle {
   display: flex;
@@ -470,27 +473,62 @@ button, a { transition: var(--transition); }
   align-items: center;
   gap: 5px;
   margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
-.hero-subtitle ion-icon { 
-  color: #3880ff; 
+.hero-subtitle ion-icon {
+  color: #3880ff;
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
 .hero-subtitle span {
   color: var(--dark-jungle-green);
   font-size: var(--fs-5);
   font-weight: var(--fw-700);
+  animation: fadeInUp 1.5s ease-out forwards;
 }
 
-.hero-title { margin-bottom: 20px; }
+.hero-title {
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.4s;
+}
 
 .hero-text {
   color: var(--cadet);
-  font-size: var(--fs-5);
+  font-size: var(--fs-27);
   line-height: 1.8;
   padding-left: 15px;
   border-left: 1px solid;
   margin-bottom: 30px;
+  animation: fadeInUp 2.5s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Add animation to the hero banner image */
+.hero-banner img {
+  animation: fadeIn 2s ease-out forwards;
+}
+
+/* Keyframes for fading in and moving up the content */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 
@@ -501,7 +539,9 @@ button, a { transition: var(--transition); }
   #ABOUT
 \*-----------------------------------*/
 
-.about { padding-block: var(--section-padding); }
+.about {
+  padding-block: var(--section-padding);
+}
 
 .about-banner {
   position: relative;
@@ -521,7 +561,9 @@ button, a { transition: var(--transition); }
   border-radius: 4px;
 }
 
-.about .section-subtitle { margin-inline: 0; }
+.about .section-subtitle {
+  margin-inline: 0;
+}
 
 .about .section-title {
   --text-align: left;
@@ -535,7 +577,9 @@ button, a { transition: var(--transition); }
   margin-bottom: 30px;
 }
 
-.about-list { margin-bottom: 30px; }
+.about-list {
+  margin-bottom: 30px;
+}
 
 .about-item {
   display: flex;
