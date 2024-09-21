@@ -207,7 +207,7 @@ button, a { transition: var(--transition); }
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   padding: 5px 20px;
-  background: hsla(9, 100%, 62%, 0.1);
+  background: var(--yellow-green);
   width: max-content;
   border-radius: 50px;
   margin-inline: auto;
